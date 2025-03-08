@@ -30,7 +30,7 @@
 
 #define TERRTHMB  &lt    SYM      RET
 #define PRMRTHMB  &lt    NUM      BCKSPC
-#define SECRTHMB  &lt    FUN      RCTRL //  tap for sticky ctrl : hold for function layer
+#define SECRTHMB  &mo    FUN      //  tap for sticky ctrl : hold for function layer
 
 // shorter codes
 #define BPSTE    &kp  K_PASTE
