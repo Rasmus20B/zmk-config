@@ -24,14 +24,21 @@
 //                          ╰caps_word on double tap, not sure if I like it yet
 
 // Layer switching
-#define SECLTHMB  &lt    MEDIA    ESC  
-#define PRMLTHMB  &lt    NAV      SPACE      
-#define TERLTHMB  &kp    TAB   //
+// #define SECLTHMB  &lt    MEDIA    ESC  
+// #define PRMLTHMB  &lt    NAV      SPACE      
+// #define TERLTHMB  &kp    TAB   //
+//
+// #define TERRTHMB  &lt    SYM      RET
+// #define PRMRTHMB  &lt    NUM      BCKSPC
+// #define SECRTHMB  &mo    FUN      //  tap for sticky ctrl : hold for function layer
 
-#define TERRTHMB  &lt    SYM      RET
-#define PRMRTHMB  &lt    NUM      BCKSPC
-#define SECRTHMB  &mo    FUN      //  tap for sticky ctrl : hold for function layer
+#define SECLTHMB  &ltsk MEDIA   LSHIFT
+#define PRMLTHMB  &ltr  NUM     0 
+#define TERLTHMB  &mt   LSHIFT  TAB
 
+#define TERRTHMB  &lt   NAV     SPACE
+#define PRMRTHMB  &mt   RC(BSPC)  BSPC
+#define SECRTHMB  &ltsk   FUN   RCTRL
 // shorter codes
 #define BPSTE    &kp  K_PASTE
 #define BCPY     &kp  K_COPY
@@ -78,6 +85,7 @@
 //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
       >;
     };
+
     number_layer { // layer 1 (numbers)
       bindings = <
 // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
@@ -147,17 +155,17 @@
 //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
       >;
     };
-    symbol_layer {
-      bindings = <
-    &kp LBRC  &kp AMPS  &kp STAR  _x_       &kp RBRC      _x_       _x_       _x_       _x_       _x_
-
-    &kp COL   &kp DLLR  &kp PRCNT &kp CARET &kp PLUS      _x_       _x_       _x_       _x_       _x_
-
-    &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp PIPE      _x_       _x_       _x_       _x_       _x_
-
-                        &kp LPAR  &kp RPAR  &kp MINUS     _x_       _x_       ___
-      >;
-    };
+    // symbol_layer {
+    //   bindings = <
+    // &kp LBRC  &kp AMPS  &kp STAR  _x_       &kp RBRC      _x_       _x_       _x_       _x_       _x_
+    //
+    // &kp COL   &kp DLLR  &kp PRCNT &kp CARET &kp PLUS      _x_       _x_       _x_       _x_       _x_
+    //
+    // &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp PIPE      _x_       _x_       _x_       _x_       _x_
+    //
+    //                     &kp LPAR  &kp RPAR  &kp MINUS     _x_       _x_       ___
+    //   >;
+    // };
   };
 };
 
