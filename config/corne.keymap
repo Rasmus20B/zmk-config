@@ -9,6 +9,7 @@
 #define NAV     2
 #define MEDIA   3
 #define FUN     4
+#define SYM     5
 
 #include "keys/36.h"
 #include "includes/macros.dtsi"
@@ -23,12 +24,12 @@
 //                          ╰caps_word on double tap, not sure if I like it yet
 
 // Layer switching
-#define SECLTHMB  &mt    MEDIA    ESC  // tap for sticky shift : hold for media layer
-#define PRMLTHMB  &mt    NUM      SPACE      //  zero here because key-repeat does not take arguments
-#define TERLTHMB  &mt    LSHIFT   TAB   //   tap for tab : hold for shift
+#define SECLTHMB  &mt    MEDIA    ESC  
+#define PRMLTHMB  &mt    NAV      SPACE      
+#define TERLTHMB  &kp    TAB   //
 
-#define TERRTHMB  &lt    NAV      RET
-#define PRMRTHMB  &mt    RC(BSPC) BSPC   // tap gives you backspace : long tap gives you delete word
+#define TERRTHMB  &mt    SYM      RET
+#define PRMRTHMB  &mt    NUM      BCKSPC
 #define SECRTHMB  &ltsk  FUN      RCTRL //  tap for sticky ctrl : hold for function layer
 
 // shorter codes
