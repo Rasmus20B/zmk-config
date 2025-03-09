@@ -9,7 +9,6 @@
 #define NAV     2
 #define MEDIA   3
 #define FUN     4
-#define SYM     5
 
 #include "keys/36.h"
 #include "includes/macros.dtsi"
@@ -28,8 +27,8 @@
 #define PRMLTHMB  &mt    NAV      SPACE      
 #define TERLTHMB  &kp    TAB   //
 
-#define TERRTHMB  &mt    SYM      RET
-#define PRMRTHMB  &mt    NUM      BCKSPC
+#define TERRTHMB  &mt    NAV      RET
+#define PRMRTHMB  &mt    NUM      BSPC   // tap gives you backspace : long tap gives you delete word
 #define SECRTHMB  &ltsk  FUN      RCTRL //  tap for sticky ctrl : hold for function layer
 
 // shorter codes
