@@ -20,9 +20,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q        &kp W               &kp E       &kp R       &kp T        &kp Y      &kp U       &kp I       &kp O        &kp P
-  &mt LSHFT A  &mt LEFT_CONTROL S  &mt LALT D  &mt LGUI F  &kp G        &kp H      &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI
-  &kp Z        &kp X               &kp C       &kp V       &kp B        &kp N      &kp M       &kp COMMA   &kp DOT      &kp FSLH
+  &none   &kp Q        &kp W               &kp E       &kp R       &kp T        &kp Y      &kp U       &kp I       &kp O        &kp P &none
+  &none   &mt LSHFT A  &mt LEFT_CONTROL S  &mt LALT D  &mt LGUI F  &kp G        &kp H      &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &none
+  &none   &kp Z        &kp X               &kp C       &kp V       &kp B        &kp N      &kp M       &kp COMMA   &kp DOT      &kp FSLH &none
                                    &lt 2 ESC   &lt 1 TAB   &kp SPACE    &lt 3 RET  &mo 1       &kp RALT
             >;
         };
@@ -35,9 +35,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp LBKT  &kp N7  &kp N8    &kp N9        &kp RBKT     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
-  &kp SEMI  &kp N4  &kp N5    &kp NUMBER_6  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans
-  &trans    &kp N1  &kp N2    &kp N3        &trans       &trans    &trans    &trans    &trans     &trans
+  &trans   &kp LBKT  &kp N7  &kp N8    &kp N9        &kp RBKT     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &none
+  &trans   &kp SEMI  &kp N4  &kp N5    &kp NUMBER_6  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &none
+  &trans  &trans    &kp N1  &kp N2    &kp N3        &trans       &trans    &trans    &trans    &trans     &trans  &none
                     &kp LGUI  &kp N0        &kp SPACE    &kp RET   &trans    &kp RALT
             >;
         };
@@ -50,18 +50,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
+  &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+  &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
+  &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
                     &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
         media_layer {
             bindings = <
-  &bl BL_TOG  &bl BL_CYCLE  &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans
-  &trans      &trans        &trans  &trans  &trans    &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans
-  &trans      &trans        &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans
+  &trans  &bl BL_TOG  &bl BL_CYCLE  &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans
+  &trans      &trans        &trans  &trans  &trans    &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans &trans  &trans
+  &trans      &trans        &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans  &trans
                             &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
