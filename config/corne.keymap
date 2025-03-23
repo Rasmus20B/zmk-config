@@ -10,9 +10,16 @@
 
 &lt {
   flavor = "balanced";
-  tapping-term-ms = <400>;
-  quick-tap-ms = <75>;
+  tapping-term-ms = <200>;
+  quick-tap-ms = <175>;
 };
+
+&mt {
+  global-quick-tap-ms = <75>;
+  quick-tap-ms = <175>;
+  flavor = "balanced";
+  hold-trigger-on-release;
+}
 
 / {
     keymap {
