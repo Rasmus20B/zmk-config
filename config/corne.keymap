@@ -19,7 +19,7 @@
   quick-tap-ms = <175>;
   flavor = "balanced";
   hold-trigger-on-release;
-}
+};
 
 / {
     keymap {
