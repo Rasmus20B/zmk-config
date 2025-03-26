@@ -8,6 +8,10 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define BASE  0 
+#define SYM   1 
+#define SYM2  2 
+
 &lt {
   flavor = "balanced";
   tapping-term-ms = <200>;
@@ -35,11 +39,11 @@
   &none   &kp Q        &kp W               &kp E       &kp R       &kp T        &kp Y      &kp U       &kp I       &kp O        &kp P &none
   &none   &mt LSHFT A  &mt LEFT_CONTROL S  &mt LALT D  &mt LGUI F  &kp G        &kp H      &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &none
   &none   &kp Z        &kp X               &kp C       &kp V       &kp B        &kp N      &kp M       &kp COMMA   &kp DOT      &kp FSLH &none
-                                   &lt 2 ESC   &lt 1 TAB   &kp SPACE    &lt 3 RET  &lt 1  BSPC       &kp RALT
+                                   &lt SYM ESC   &lt NUM TAB   &lt SYM SPACE    &lt MED RET  &lt NUM BSPC       &kp RALT
             >;
         };
 
-        number_layer {
+        symbol_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -47,14 +51,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &trans   &kp LBKT  &kp N7  &kp N8    &kp N9        &kp RBKT     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &none
-  &trans   &kp SEMI  &kp N4  &kp N5    &kp NUMBER_6  &kp EQUAL    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &none
-  &trans  &trans    &kp N1  &kp N2    &kp N3        &trans       &trans    &trans    &trans    &trans     &trans  &none
-                    &kp LGUI  &kp N0        &kp SPACE    &kp RET   &trans    &kp RALT
+  &trans   &kp N1  &kp N2  &kp N3         &kp N4      &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0  &none
+  &trans   &kp GT  &kp PRCNT  &kp LPAR    &kp LBRC    &kp LBKT    &kp EQUAL &kp QMARK  &kp APOS   &kp ADD  &kp ASTRK  &none
+  &trans   &kp LT  &kp DLLR   &kp RPAR    &kp RBRC    &kp RBKT    &kp AT    &kp EXCL   &kp DQT    &kp MINUS &kp FLSH  &none
+                    &kp LGUI  &kp N0      &kp SPACE    &lt SYM2 RET   &trans    &kp RALT
             >;
         };
 
-        symbol_layer {
+        symbol2_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -62,9 +66,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-  &trans  &trans    &trans  &trans    &trans    &kp DQT       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
-  &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
+  &trans  &kp CARET  &kp UNDER    &kp POUND  &kp EURO  &kp HASH   &trans  &trans   &trans  &trans  &trans  &trans
+  &trans  &kp GRAVE  &kp TILDE    &kp BLSH   &kp PIPE  &kp AMPS   &trans  &trans   &trans  &trans  &trans  &trans
+  &trans  &trans    &trans  &trans    &trans    &trans            &trans  &trans   &trans  &trans  &trans  &trans
                     &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
