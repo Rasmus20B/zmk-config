@@ -68,7 +68,7 @@
 
             bindings = <
   &trans  &kp CARET  &kp UNDER    &kp LS(N4)  &kp LS(N3)  &kp HASH   &trans  &trans   &trans  &trans  &trans  &trans
-  &trans  &kp GRAVE  &kp TILDE    &kp BLSH   &kp PIPE  &kp AMPS   &trans  &trans   &trans  &trans  &trans  &trans
+  &trans  &kp GRAVE  &kp TILDE    &kp BSLH   &kp PIPE  &kp AMPS   &trans  &trans   &trans  &trans  &trans  &trans
   &trans  &trans    &trans  &trans    &trans    &trans            &trans  &trans   &trans  &trans  &trans  &trans
                     &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
