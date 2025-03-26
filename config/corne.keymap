@@ -54,7 +54,7 @@
             bindings = <
   &trans   &kp N1  &kp N2  &kp N3         &kp N4      &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0  &none
   &trans   &kp GT  &kp PRCNT  &kp LPAR    &kp LBRC    &kp LBKT    &kp EQUAL &kp QMARK  &kp APOS   &kp PLUS  &kp ASTRK  &none
-  &trans   &kp LT  &kp DLLR   &kp RPAR    &kp RBRC    &kp RBKT    &kp AT    &kp EXCL   &kp DQT    &kp MINUS &kp FLSH  &none
+  &trans   &kp LT  &kp DLLR   &kp RPAR    &kp RBRC    &kp RBKT    &kp AT    &kp EXCL   &kp DQT    &kp MINUS &kp FSLH  &none
                     &kp LGUI  &kp N0      &kp SPACE    &lt SYM2 RET   &trans    &kp RALT
             >;
         };
