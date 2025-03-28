@@ -11,7 +11,8 @@
 #define BASE  0 
 #define SYM   1 
 #define SYM2  2 
-#define MED  2 
+#define NAV  3 
+#define MED  4 
 
 &lt {
   flavor = "balanced";
@@ -40,7 +41,7 @@
   &none   &kp Q        &kp W               &kp E       &kp R       &kp T        &kp Y      &kp U       &kp I       &kp O        &kp P &none
   &none   &mt LSHFT A  &mt LEFT_CONTROL S  &mt LALT D  &mt LGUI F  &kp G        &kp H      &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &none
   &none   &kp Z        &kp X               &kp C       &kp V       &kp B        &kp N      &kp M       &kp COMMA   &kp DOT      &kp FSLH &none
-                                   &lt SYM ESC   &kp TAB   &lt SYM SPACE    &lt MED RET  &kp BSPC       &kp RALT
+                                   &lt MED ESC   &lt NAV TAB   &lt SYM SPACE    &lt MED RET  &kp BSPC       &kp RALT
             >;
         };
 
@@ -53,8 +54,8 @@
 
             bindings = <
   &trans   &kp N1  &kp N2  &kp N3         &kp N4      &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0  &none
-  &trans   &kp GT  &kp PRCNT  &kp LPAR    &kp LBRC    &kp LBKT    &kp EQUAL &kp QMARK  &kp APOS   &kp PLUS  &kp ASTRK  &none
-  &trans   &kp LT  &kp DLLR   &kp RPAR    &kp RBRC    &kp RBKT    &kp AT    &kp EXCL   &kp DQT    &kp MINUS &kp FSLH  &none
+  &trans   &kp LT  &kp PRCNT  &kp LPAR    &kp LBRC    &kp LBKT    &kp EQUAL &kp QMARK  &kp APOS   &kp PLUS  &kp ASTRK  &none
+  &trans   &kp GT  &kp DLLR   &kp RPAR    &kp RBRC    &kp RBKT    &kp AT    &kp EXCL   &kp DQT    &kp MINUS &kp FSLH  &none
                     &kp LGUI  &kp N0      &kp SPACE    &lt SYM2 RET   &trans    &kp RALT
             >;
         };
@@ -73,6 +74,15 @@
                     &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
+
+        navigation_layer {
+            bindings = <
+  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans   &trans  &trans  &trans  &trans
+  &trans  &trans  &trans    &trans   &trans  &trans   &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &trans  &trans
+  &trans  &trans    &trans  &trans    &trans    &trans  &trans  &trans   &trans  &trans  &trans  &trans
+                    &trans  &trans    &trans    &trans    &trans     &trans
+            >;
+        }
 
         media_layer {
             bindings = <
