@@ -14,6 +14,7 @@
 #define SYM2  2 
 #define NAV  3 
 #define MED  4 
+#define COL  5
 
 &lt {
   flavor = "balanced";
@@ -89,8 +90,16 @@
             bindings = <
   &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans
   &trans      &trans        &trans  &trans  &trans    &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans &trans  &trans
-  &trans      &trans        &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans  &trans
+  &trans      &to         &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans  &trans
                             &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+        colemak_layer {
+            bindings = <
+  &none   &kp Q        &kp W               &kp F       &kp P       &kp B        &kp J      &kp L       &kp U       &kp Y        &kp SEMI &none
+  &none   &mt LSHFT A  &mt LEFT_CONTROL R  &mt LALT S  &mt LGUI T  &kp G        &kp M      &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHFT O  &none
+  &none   &kp Z        &kp X               &kp C       &kp D       &kp V        &kp K      &kp H       &kp COMMA   &kp DOT      &kp FSLH &none
+                                   &lt MED ESC   &lt NAV TAB   &lt SYM SPACE    &lt MED RET  &kp BSPC       &kp RALT
             >;
         };
     };
