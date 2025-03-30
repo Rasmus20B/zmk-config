@@ -90,7 +90,7 @@
             bindings = <
   &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans
   &trans      &trans        &trans  &trans  &trans    &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans &trans  &trans
-  &trans      &to         &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans  &trans
+  &trans      &to COL        &trans  &trans  &trans    &trans  &trans  &trans        &trans           &trans &trans  &trans
                             &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
